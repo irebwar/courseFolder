@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Regiter Page</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+
+	<div class="container">
+		<header>Regiter Form</header>
+
+	<hr>
+	<main>
+		<form action="register.php" method="post" class="style-form">
+			<fieldset>
+				<legend>Regiter</legend>
+				<div>
+					<label for="full-name">Full Name:- </label>
+				<input type="text" name="full-name" id="full-name" required placeholder="Full Name">
+				</div>
+				<br>
+				<div>
+					<label for="email">Email:- </label>
+					<input type="email" name="email" id="email" required placeholder="Email">
+				</div>
+				<br>
+				<div>
+					<label for="password">Password:- </label>
+					<input type="password" name="password" id="password" required placeholder="Password">
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Preferences</legend>
+				<p>Which topics are you insterested in?</p>
+				<input type="checkbox" name="topic-web" id="topics">
+				<label for="topic-web">Web Development</label>
+
+				<input type="checkbox" name="topic-data" id="topics">
+				<label for="topic-data">Data Scirnce</label>
+
+				<p>What is your current skill level?</p>
+				<input type="radio" name="sckill_livel" id="level_beginner" value="beginner" checked>
+				<label for="sckill_livel">Beginner</label>
+				<input type="radio" name="sckill_livel" id="level_intermediate" value="intermediate">
+				<label for="level_intermediate">Intermediate</label>
+			</fieldset>
+			<br>
+			<div>
+				<input type="submit" name="" value="Regiter">
+			</div>
+		</form>
+		<p>If you have account! <a href="login.html">Login account</a></p>
+	</main>
+	<hr>
+	<footer>
+		<p>Register Page in Web Course</p>
+	</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
