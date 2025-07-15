@@ -4,41 +4,90 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 	<title>BizPro - Your Business Solution</title>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
-			<a href="index.html" class="navbar-brand"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
-			  <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
-			  <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
-			</svg> BizPro</a>
-			<button class="navbar-toggler" data-bs-toggler="collapse" data-bs-target="#navbarNav">
+			<a href="index.html" class="navbar-brand"><i class="bi bi-building"></i> BizPro</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-			<ul class="navbar-nav ms-auto">
-				<li class="nav-item">
-					<a href="index.html" class="nav-link active">Home</a>
-				</li>
-				<li class="nav-item">
-					<a href="about.html" class="nav-link">About</a>
-				</li>
-				<li class="nav-item">
-					<a href="services.html" class="nav-link">Services</a>
-				</li>
-				<li class="nav-item">
-					<a href="contact.html" class="nav-link">Contact</a>
-				</li>
-			</ul>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="about.html" class="nav-link">About</a>
+					</li>
+					<li class="nav-item">
+						<a href="services.html" class="nav-link">Services</a>
+					</li>
+					<li class="nav-item">
+						<a href="contact.html" class="nav-link">Contact</a>
+					</li>
+				</ul>
+			</div>
+			
 		</div>
 	</nav>
 
 	<div class="container-fluid bg-primary text-white text-center py-5">
-		<h1 class="display-4 fw-bold">Grow Your Business</h1>
-		<p class="lead my-4"> We provide innovateive solution</p>
-		<a href="#" class="btn btn-outline-light btn-lg">Learn More</a>
+		<div id="heroCarousel" class="carousel slide">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active">
+				</button>
+				<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1">
+				</button>
+				<button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2">
+				</button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active" style="background-image: url('download.jpg'); height: 100vh; background-size: cover; background-position: center; background-repeat: no-repeat;">
+					<div class="container carousel-caption d-none d-md-block text-start">
+						<h1 class="display-4">
+							Innovate Business Solutions
+						</h1>
+						<p>
+							We deliver cutting-edge strategies to elevate your brand.
+						</p>
+					</div>
+				</div>
+				<div class="carousel-item" style="background-image: url('download.jpg'); height: 100vh; background-size: cover; background-position: center; background-repeat: no-repeat;">
+					<div class="container carousel-caption d-none text-start">
+
+						<h1 class="display-4">
+							Innovate Business Solutions
+						</h1>
+						<p>
+							We deliver cutting-edge strategies to elevate your brand.
+						</p>
+					</div>
+				</div>
+				<div class="carousel-item" style="background-image: url('download.jpg'); height: 100vh; background-size: cover; background-position: center; background-repeat: no-repeat;">
+					<div class="container carousel-caption d-none d-md-block text-start">
+
+						<h1 class="display-4">
+							Innovate Business Solutions
+						</h1>
+						<p>
+							We deliver cutting-edge strategies to elevate your brand.
+						</p>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</button>
+		</div>
 	</div>
+</div>
 
 	<div class="container my-5">
 		<div class="text-center mb-5">
