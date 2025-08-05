@@ -43,64 +43,9 @@
 // console.log(typeof age);
 // console.log(typeof isLoggedIn);
 
-// console.log("Welcome");
+const drivingAge = 18;
+let userAge = 22;
 
-// const drivinAge = 18;
-// let userAge = 12;
-
-// if (userAge >= drivinAge) {
-// 	// (23 >= 18)
-// 	console.log("پیرۆزە!");
-// }
-
-
-// let studentScore = 50;
-// const passingScore = 50;
-
-// if (studentScore >= passingScore) {
-// 	// (45 >= 50)
-// 	console.log("پیرۆزە");
-// } else {
-// 	console.log("بەداخەوە.");
-// }
-
-// const hour = 24;
-
-// if (hour < 12) {
-// 	console.log("بەیانی");
-// } 
-
-// else if (hour < 18) {
-// 	console.log("نیوەڕۆ");
-// }
-
-// else {
-// 	console.log("ئێوارە.");
-// }
-
-// const isLoggedIn = false;
-// const hasSubsciption = false;
-// const isGameFree = false;
-
-// if (isLoggedIn && (!hasSubsciption || isGameFree)) {
-// 	console.log("Welcome");
-// }else {
-// 	console.log("False");
-// }
-
-// if (!isLoggedIn) {
-// 	console.log("تکایە سەرەتا بچۆ ژوورەوە.")
-// }
-
-// let username = "Ibrahim";
-
-// if (username) {
-// 	console.log("Welcome ", username);
-// }
-
-// let emptyInput = "1";
-// if (emptyInput) {
-// 	console.log("is not empty input");
-// }else {
-// 	console.log("Is input empty");
-// }
+if (drivingAge <= userAge) {
+	console.log("پیرۆزە");
+}
